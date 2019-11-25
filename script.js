@@ -14,21 +14,23 @@ console.log(arr[0])
 
 
 
-let answer = +prompt("Есть ли вам 18?m","да")
+let answer = +prompt("Есть ли вам 18?m","да")*/
 
+let money=prompt("Ваш бюджет на месяц?")
+let time=prompt("Введите дату в формате YYYY-MM-DD")
 
-console.log(typeof(answer));
+let qu1=prompt("Введите обязательную статью расходов в этом месяце")
+let qu2=prompt("Во сколько обойдется?")
 
-console.log("arr"+"- object")
-console.log("arr"+1)
-*/
+let appData={
+    budjet:money,
+    timeData:time,
+    expenses: {
+        qu1 : qu2
+        },
+    optionalExpenses:null,
+    income:null,
+    savings:false,
+}
 
-let incr = 10,
-    decr = 10;
-
-
-    incr++;
-    decr--;
-    console.log(incr);
-
-    console.log("2"==2);
+alert(`бюджет на 1 день ${+appData.budjet/30} `)
